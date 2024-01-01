@@ -30,8 +30,8 @@ const Product = () => {
                             <div>
                                 <h5 className='text-red-800'>{products.title}</h5>
                             </div>
-                            <div className='mt-2 cursor-pointer py-1 rounded-md bg-blue-600 flex justify-center items-center'>
-                                <button className='text-red-50' onClick={() => addToCart(products)}>Add to cart</button>
+                            <div className='mt-2 cursor-pointer py-1 rounded-md bg-blue-600 flex justify-center items-center'onClick={() => addToCart(products)}>
+                                <button className='text-red-50'>Add to cart</button>
                             </div>
                         </div>
                     </div>
