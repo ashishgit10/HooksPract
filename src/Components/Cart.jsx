@@ -2,7 +2,11 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 const Cart = () => {
   const cartproduct=useSelector(state=>state.cart)
-  return (
+  return (<>
+
+    <h1>
+Cart
+    </h1>
     <div className=" grid pt-10 md:grid-cols-4 lg:grid-cols-6 gap-y-3 gap-x-3 sm:grid-cols-1 justify-items-center  md:max-w-7xl md:m-auto" >
     {
        cartproduct.map(products => (
@@ -21,6 +25,7 @@ const Cart = () => {
         ))
     }
 </div>
+  </>
   )
 }
 
